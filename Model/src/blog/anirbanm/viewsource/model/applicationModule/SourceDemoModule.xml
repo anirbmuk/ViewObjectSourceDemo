@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SourceDemoModule"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true"
+  ComponentClass="blog.anirbanm.viewsource.model.applicationModule.SourceDemoModuleImpl"
+  ComponentInterface="blog.anirbanm.viewsource.model.applicationModule.common.SourceDemoModule">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="SourceDemoVO1"
+    ViewObjectName="blog.anirbanm.viewsource.model.view.SourceDemoVO"/>
+  <ClientInterface
+    Name="__clientInterface">
+    <Method
+      Name="findByKey"
+      MethodName="findByKey">
+      <Return
+        Name="_return_type_"
+        Type="oracle.jbo.Row"/>
+      <Parameter
+        Name="keyAttr1"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="keyAttr2"
+        Type="java.lang.String"/>
+    </Method>
+  </ClientInterface>
+</AppModule>
